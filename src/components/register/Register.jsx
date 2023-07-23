@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useRef } from "react";
 import "./register.css";
-import {useNavigate} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 export default function Register() {
   const username = useRef();
   const email = useRef();
@@ -43,12 +43,16 @@ else{
             <input placeholder="Password" minLength="6" required type="password" ref={password} className="loginInput" />
             <input placeholder="Password Again" type="password" required ref={passwordAgain} className="loginInput" />
             <button className="loginButton" type="submit">Sign Up</button>
-            <button className="loginRegisterButton">
-              Log into Account
-            </button>
+         
           </form>
+          <Link to="/login">
+          <button className="loginRegisterButton" >
+              Log into Account
+          </button>
+          </Link>
         </div>
       </div>
     </div>
+    
   );
 }

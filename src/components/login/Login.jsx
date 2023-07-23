@@ -45,13 +45,13 @@ export default function Login() {
             <button className="loginButton" type="submit" disabled={isFetching}>
       
 
-                "Log In"
+                Log In
 
             </button>
             <span className="loginForgot">Forgot Password?</span>
             <button className="loginRegisterButton">
 
-                "Create a New Account"
+                Create a New Account
 
             </button>
           </form>
